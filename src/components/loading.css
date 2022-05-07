@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,700;1,900&display=swap');
+#s1 {
+    font-family: 'Amita', cursive;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+#p1 {
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+#menu
+{
+    font-family: 'Katibeh';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.04em;
+    margin-top: 1.50rem;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
