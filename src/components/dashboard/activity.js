@@ -12,7 +12,7 @@ function activity() {
                     </tr>
                 </thead>
                 <tbody className="">
-                    <tr className="h-2 bg-purple-300 " >
+                    <tr className="h-2 bg-gray-200 " >
                         <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
                         <td>Malcolm Lockyer</td>
                         <td>1961</td>

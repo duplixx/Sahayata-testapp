@@ -1,35 +1,36 @@
 import React from "react";
 import { useState,useEffect } from 'react';
-import Login from './components/login/login';
+import Login from './components/login';
 import { AuthProvider } from './context/authContext';
 import Splash from './components/loading'
 import {Routes,Route} from "react-router-dom";
-import Dashboard from "./components/dashboard/dash"
-import Signup from "./components/signup/signup"
+import Signup from "./components/signup"
 import ProtectedRoute from "./components/protectedroute"
-import Dash from "./components/dashboard/dash";
+import Dash from "./components/dash";
 function App() {
-  // const[Loading,setLoading]=useState(false); //this is for splash animation
-  //   useEffect(()=>{
-  //     setLoading(true)
-  //     setTimeout( ()=>{
-  //       setLoading(false)
-  //     },500)
-  //   },[])
+  const[Loading,setLoading]=useState(false); //this is for splash animation
+    useEffect(()=>{
+      setLoading(true)
+      setTimeout( ()=>{
+        setLoading(false)
+      },600)
+    },[])
   return (
     <>
-      {/* <div className="bg-red-500">
-        hello this 
-      </div> */}
-        {/* <Login/> */}
+      {
+        Loading?
+         <Splash/>
+         :
+        
         <AuthProvider>
           <Routes>
             <Route path="/dash" element={<ProtectedRoute><Dash/></ProtectedRoute>} />
             <Route path="/" element={<Login/>} />
+            <Route path="/lo" element={<Dash/>} />
             <Route path="/SignUp" element={<Signup/>} />
           </Routes>
         </AuthProvider>
-        
+        } 
 
     </>
   );

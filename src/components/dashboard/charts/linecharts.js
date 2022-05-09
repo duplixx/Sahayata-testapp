@@ -1,37 +1,84 @@
-import React, { Component } from 'react';
-import Chart from 'react-apexcharts'
+import React, { useState, useEffect } from 'react'
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
 
-class Line extends Component {
+import { Line } from 'react-chartjs-2';
 
-  constructor(props) {
-    super(props);
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
-    this.state = {
-      options: {
-        stroke: {
-          curve: 'smooth'
-        },
-        markers: {
-          size: 0
-        },
-        xaxis: {
-          categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-        }
-      },
-      series: [{
-        data: [30, 40, 25, 50, 49, 21, 70, 51]
-      }],
-    }
-  }
 
-  render() {
+const LineChart = () => {
+  const data = [
+    {
+      name: "Mizoram",
+      uv: 4000,
+      pv: 2400,
+      amt: 2400,
+    },
+    {
+      name: "Cherrapunji",
+      uv: 3000,
+      pv: 1398,
+      amt: 2210,
+    },
+    {
+      name: "Hyderabad",
+      uv: 2000,
+      pv: 9800,
+      amt: 2290,
+    },
+    {
+      name: "tuscom",
+      uv: 2780,
+      pv: 3908,
+      amt: 2000,
+    },
+    {
+      name: "Haryana",
+      uv: 1890,
+      pv: 4800,
+      amt: 2181,
+    },
+    {
+      name: "Delhi",
+      uv: 2390,
+      pv: 3800,
+      amt: 2500,
+    },
+    {
+      name: "Chandigarh",
+      uv: 3490,
+      pv: 4300,
+      amt: 2100,
+    },
+  ];
 
-    return (
-      <div className="line">
-        <Chart options={this.state.options} series={this.state.series} type="line" width="500" />
-      </div>
-    );
-  }
+  return (
+    <div>
+      <Line className='bg-gradient-to-tr from-gray-700 via-gray-900 to-black rounded-lg border-4 border-black text-white'
+        data={data}
+        height={200}
+        options={false}
+
+      />
+    </div>
+  )
 }
 
-export default Line;
+export default LineChart
