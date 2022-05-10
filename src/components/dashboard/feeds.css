@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Baloo+2:wght@400;500&family=Baloo+Bhai+2&family=Dancing+Script:wght@700&family=Nunito&family=Poppins:wght@900&family=Square+Peg&display=swap');
+.container{
+    display: flex;
+    position: relative;
+    box-shadow: 5px 7px 10px grey;
+    width: moz-fit-content;
+    padding-bottom: 5px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.fa-square{
+    color: rgb(106, 234, 106);
+}
+
+.card-image{
+    padding: 2px 20px;
+}
+.fa-circle{
+    font-size: 40px;
+}
+.subscript{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+.image{
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+}
+.icons{
+    margin-top: 10px;
+    background-color: #2f4353;
+    background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+.icons i{
+    padding-left: 35px;
+    font-size: 18px;
+}
+.fa-heart{
+    color: red;
+}
+.fa-share{
+    color: rgb(77, 158, 185);
+}
+.fa-brush{
+    color: rgb(133, 80, 80);
+}

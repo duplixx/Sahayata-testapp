@@ -49,7 +49,7 @@ export default function Areachaart() {
       amt: 2500,
     },
     {
-      name: "Chandigarh",
+      name: "Chan",
       uv: 3490,
       pv: 4300,
       amt: 2100,
@@ -59,19 +59,20 @@ export default function Areachaart() {
   return (
     <div>
       <AreaChart
-        width={300}
-        height={200}
+        width={350}
+        height={230}
         data={data}
         margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+        className='bg-black rounded-xl shadow-xl shadow-white text-black'
       >
         <defs>
           <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
-            <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
+            <stop offset="5%" stopColor="#8884d8" stopOpacity={1} />
+            <stop offset="95%" stopColor="#8884d8" stopOpacity={1} />
           </linearGradient>
           <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
-            <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
+            <stop offset="5%" stopColor="#82ca9d" stopOpacity={1} />
+            <stop offset="95%" stopColor="#5089C6" stopOpacity={0} />
           </linearGradient>
         </defs>
         <XAxis dataKey="name" />
@@ -81,14 +82,14 @@ export default function Areachaart() {
         <Area
           type="monotone"
           dataKey="uv"
-          stroke="#8884d8"
+          stroke="#6200EE"
           fillOpacity={1}
           fill="url(#colorUv)"
         />
         <Area
           type="monotone"
           dataKey="pv"
-          stroke="#82ca9d"
+          stroke="#8884d8"
           fillOpacity={1}
           fill="url(#colorPv)"
         />

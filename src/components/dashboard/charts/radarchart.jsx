@@ -1,77 +1,89 @@
 import React from "react";
-import {
-    RadarChart,
-    Radar,
-  Legend,
-  PolarGrid,
-  PolarAngleAxis,
-  PolarRadiusAxis,
-  ResponsiveContainer,
-  RadialBarChart,
-  RadialBar,
-} from "recharts";
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 export default function Radarchart() {
   const data = [
     {
-      subject: "Math",
-      A: 120,
-      B: 110,
-      fullMark: 150,
+      name: 'Page A',
+      uv: 4000,
+      pv: 2400,
+      amt: 2400,
     },
     {
-      subject: "Chinese",
-      A: 98,
-      B: 130,
-      fullMark: 150,
+      name: 'Page B',
+      uv: 3000,
+      pv: 1398,
+      amt: 2210,
     },
     {
-      subject: "English",
-      A: 86,
-      B: 130,
-      fullMark: 150,
+      name: 'Page C',
+      uv: 2000,
+      pv: 9800,
+      amt: 2290,
     },
     {
-      subject: "Geography",
-      A: 99,
-      B: 100,
-      fullMark: 150,
+      name: 'Page D',
+      uv: 2780,
+      pv: 3908,
+      amt: 2000,
     },
     {
-      subject: "Physics",
-      A: 85,
-      B: 90,
-      fullMark: 150,
+      name: 'Page E',
+      uv: 1890,
+      pv: 4800,
+      amt: 2181,
     },
     {
-      subject: "History",
-      A: 65,
-      B: 85,
-      fullMark: 150,
+      name: 'Page F',
+      uv: 2390,
+      pv: 3800,
+      amt: 2500,
+    },
+    {
+      name: 'Page G',
+      uv: 3490,
+      pv: 4300,
+      amt: 2100,
+    },
+    {
+      name: 'Page G',
+      uv: 3990,
+      pv: 4000,
+      amt: 3200,
+    },
+    {
+      name: 'Page G',
+      uv: 3490,
+      pv: 2440,
+      amt: 1400,
+    },
+    {
+      name: 'Page G',
+      uv: 4490,
+      pv: 3360,
+      amt: 1800,
+    },
+    {
+      name: 'Page G',
+      uv: 3490,
+      pv: 4200,
+      amt: 1600,
     },
   ];
   return (
-    <div>
-      <RadarChart outerRadius={90} width={300} height={250} data={data}>
-        <PolarGrid />
-        <PolarAngleAxis dataKey="subject" />
-        <PolarRadiusAxis angle={30} domain={[0, 150]} />
-        <Radar
-          name="Mike"
-          dataKey="A"
-          stroke="#8884d8"
-          fill="#332012"
-          fillOpacity={0.6}
-        />
-        <Radar
-          name="Lily"
-          dataKey="B"
-          stroke="#82ca9d"
-          fill="#82ca9d"
-          fillOpacity={0.6}
-        />
-        <Legend />
-      </RadarChart>
+    <div className="">
+      <ResponsiveContainer width={350}
+        height={230} className="bg-gradient-to-r from-purple-500 to-blue-600 rounded-xl ">
+        <BarChart
+          data={data}
+        >
+          <XAxis dataKey="name" stroke="#FFFFFF"/>
+          <YAxis stroke="#FFFFFF" />
+          <Legend  />
+          <Bar dataKey="pv" stackId="a" fill="#52CFA0" />
+          <Bar dataKey="uv" stackId="a" fill="#FFFFFF" />
+        </BarChart>
+      </ResponsiveContainer>
     </div>
   );
 }

@@ -38,10 +38,10 @@ export default function Sidebar() {
 
     ];
     return (
-        <div className="flex">
+        <div className="flex  ">
             <div
                 className={` ${open ? "w-60" : "w-20 "
-                    } bg-gray-200 h-screen p-5  pt-8 relative duration-300`}
+                    } bg-indigo-100 h-screen p-5  pt-8 relative duration-300`}
             >
                 <BsFillArrowLeftCircleFill
                     className={`absolute cursor-pointer pl-1 text-4xl -right-3 top-9 w-8 bg-gray-200
