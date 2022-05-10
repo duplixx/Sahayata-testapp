@@ -69,17 +69,40 @@ export default function Radarchart() {
       pv: 4200,
       amt: 1600,
     },
+    {
+      name: 'Page G',
+      uv: 3990,
+      pv: 4000,
+      amt: 3200,
+    },
+    {
+      name: 'Page G',
+      uv: 3490,
+      pv: 2440,
+      amt: 1400,
+    },
+    {
+      name: 'Page G',
+      uv: 4490,
+      pv: 3360,
+      amt: 1800,
+    },
+    {
+      name: 'Page G',
+      uv: 3490,
+      pv: 4200,
+      amt: 1600,
+    },
   ];
   return (
-    <div className="">
+    <div className=" ">
       <ResponsiveContainer width={350}
-        height={230} className="bg-gradient-to-r from-purple-500 to-blue-600 rounded-xl ">
+        height={230} className="bg-gradient-to-r from-purple-500 to-blue-600 rounded-xl shadow-xl shadow-purple-500 border-2 ">
         <BarChart
           data={data}
         >
           <XAxis dataKey="name" stroke="#FFFFFF"/>
           <YAxis stroke="#FFFFFF" />
-          <Legend  />
           <Bar dataKey="pv" stackId="a" fill="#52CFA0" />
           <Bar dataKey="uv" stackId="a" fill="#FFFFFF" />
         </BarChart>

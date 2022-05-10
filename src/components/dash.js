@@ -21,8 +21,8 @@ export default function Dash() {
           <div className="flex ">
             <Sidebar/>
              <div className="flex-col w-[1500px] ">
-                <div className=" flex md:flex-col  rounded-xl space-x-1 justify-center align-center md:h-[300px]  px-4 pt-6 flex-wrap ml-4 mt-4 bg-gradient-to-b from-error to-white backdrop-blur-sm">
-                  <div id='slide1' className="carousel-item"><LineChaart/></div>
+                <div className=" flex md:flex-col  rounded-xl space-x-1 justify-center align-center md:h-[300px]  px-4 pt-6 flex-wrap ml-4 mt-4  backdrop-blur-sm">
+                  {/* <div id='slide1' className="carousel-item"><LineChaart/></div> */}
                   <div id='slide4' className="carousel-item"><Radial/></div>
                   <div id='slide2' className="carousel-item"><AreaChart/></div>
                   <div id='slide3' className="carousel-item"><RadarChart/></div>
