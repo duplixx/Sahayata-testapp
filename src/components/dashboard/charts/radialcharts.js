@@ -13,50 +13,48 @@ import {
   
 } from "recharts";
 export default function Radialcharts() {
-
-  // Earthquake Richer Scale vs Death Toll
   
   const data = [
     {
-      name: 'Delhi',
-      uv: 9,
+      name: '18-24',
+      uv: 31.47,
       pv: 2400,
       fill: '#FFFFFF',
     },
     {
-      name: 'Uttar Pradesh',
-      uv: 7,
-      pv: 450,
+      name: '25-29',
+      uv: 26.69,
+      pv: 4567,
       fill: '#83a6ed',
     },
     {
-      name: 'Uttrakhand',
-      uv: 8,
+      name: '30-34',
+      uv: 15.69,
       pv: 1398,
       fill: '#8dd1e1',
     },
     {
-      name: 'Jammu',
+      name: '35-39',
       uv: 8.22,
-      pv: 1800,
+      pv: 9800,
       fill: '#82ca9d',
     },
     {
-      name: 'Kashmir',
+      name: '40-49',
       uv: 8.63,
       pv: 3908,
       fill: '#a4de6c',
     },
     {
-      name: 'Himachal Pradesh',
-      uv: 7.63,
-      pv: 1800,
+      name: '50+',
+      uv: 2.63,
+      pv: 4800,
       fill: '#d0ed57',
     },
     {
-      name: 'Kerla',
-      uv: 6.6,
-      pv: 800,
+      name: 'unknow',
+      uv: 6.67,
+      pv: 4800,
       fill: '#ffc658',
     },
   ];

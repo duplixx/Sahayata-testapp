@@ -32,7 +32,7 @@ export default function Navbar() {
                     <div className="dropdown dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar online">
                             <div className="w-10 rounded-full">
-                                <img src="https://api.lorem.space/image/face?hash=33791" />
+                                <img src="https://lh3.googleusercontent.com/a-/AOh14Gh1sLz6krN68NK_Fw-y9rq563HnqPcZBF-Y_62JpUM=s360-p-rw-no" />
                             </div>
                         </label>
                         <div className="mt-3 mr-4 card card-compact dropdown-content h-42 bg-base-100 shadow">

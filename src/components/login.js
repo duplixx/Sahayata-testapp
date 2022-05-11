@@ -6,10 +6,9 @@ import animationData from '../lottie/turtle.json'
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import { useRef, useEffect, useState } from "react";
 import { useAuth } from "../context/authContext";
+import GoogleButton from "react-google-button";
 import Dash from './dash'
 import { RiShieldUserFill } from 'react-icons/ri'
-
-
 
 
 
@@ -28,6 +27,15 @@ export default function Login() {
       navigate("/Dash");
     } catch (err) {
       setError("Failed to Login");
+    }
+  };
+  const handleGoogleSignUp = async (e) => {
+    e.preventDefault();
+    try {
+      await GoogleSignIn();
+      navigate('/Dash');
+    } catch (err) {
+      setError(err.message);
     }
   };
   const defaultOptions = {
@@ -144,6 +152,9 @@ export default function Login() {
                     {" "}
                     Log In{" "}
                   </button>
+                  <div className="flex justify-center align-center mt-2">
+                    <GoogleButton className="g-btn" type="dark" onClick={handleGoogleSignUp}/>
+                  </div>
                   <span className="font-bold ">
                     Are you new to family ?<br></br>
                     <a href="/signup" className="hover:text-blue-600 text-lg">Signup</a>

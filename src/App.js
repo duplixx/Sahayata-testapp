@@ -7,6 +7,7 @@ import {Routes,Route} from "react-router-dom";
 import Signup from "./components/signup"
 import ProtectedRoute from "./components/protectedroute"
 import Dash from "./components/dash";
+import Admin from "./components/admin";
 function App() {
   const[Loading,setLoading]=useState(false); //this is for splash animation
     useEffect(()=>{
@@ -26,7 +27,7 @@ function App() {
           <Routes>
             <Route path="/dash" element={<ProtectedRoute><Dash/></ProtectedRoute>} />
             <Route path="/" element={<Login/>} />
-            <Route path="/lo" element={<Dash/>} />
+            <Route path="/admin" element={<Admin/>}/>
             <Route path="/SignUp" element={<Signup/>} />
           </Routes>
         </AuthProvider>

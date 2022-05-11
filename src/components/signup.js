@@ -39,6 +39,8 @@ export default function SignUp() {
       setError(err.message);
     }
   };
+
+  
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -148,9 +150,7 @@ export default function SignUp() {
                     {" "}
                     Sign Up{" "}
                   </button>
-                  <div className="flex justify-center align-center mt-2">
-                    <GoogleButton className="g-btn" type="dark" onClick={handleGoogleSignUp}/>
-                  </div>
+                  
                   {/* <i
                     className="bi bi-google  border-4 border-orange-400 hover:bg-orange-400 px-2 rounded-md "
                     onchange={handleGoogleSignUp}
