@@ -1,0 +1,273 @@
+.box-1{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 607px;
+    height: 620px;
+    left: 652px;
+    top: 71.59px;
+
+    background: #FFFCFC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    transform: rotate(-1deg);
+  
+  
+}
+
+.box-2{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 607px;
+    height: 620px;
+    left: 626px;
+    top: 69.06px;
+
+    background: #FFFCFC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    transform: rotate(-3.5deg);
+}
+
+.box-3{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 607px;
+    height: 620px;
+    left: 600px;
+    top: 62.9px;
+
+    background: #FFFCFC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    transform: rotate(-5deg);
+}
+
+.text-sahayata{
+    position: absolute;
+    width: 308px;
+    height: 115px;
+    left: 32px;
+    top: 32px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 115px;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.body{
+    background-image: url("download.jpg");
+    position: relative;
+    width: 1280px;
+    height: 720px;
+
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)), #FFFFFF;
+    border-radius: 0px; */
+}
+
+.login-button{
+    position: absolute;
+    width: 380px;
+    height: 62px;
+    left: 136px;
+    top: 462px;
+
+    background: #72C5F9;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;    
+}
+
+.login-text{
+    position: absolute;
+    /* width: 80px;
+    height: 38px;
+    left: 293px;
+    top: 471px; */
+
+    font-family: 'Poppins', sans-serif;
+    /* font-style: normal; */
+    /* font-weight: 700;
+    font-size: 32px;
+    line-height: 38px; */
+    /* identical to box height */
+
+    letter-spacing: 0.15em;
+
+    color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Email{
+    /* E-mail Id */
+
+
+    position: absolute;
+    width: 365.01px;
+    height: 24px;
+    left: 74px;
+    top: 176px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    border: none;
+
+    color: #958D8D;
+
+}
+
+.l1{
+    position: absolute;
+    width: 363.03px;
+    height: 0px;
+    left: 74px;
+    top: 200px;
+
+    border: 1px solid #666262;
+    transform: rotate(-0deg);
+}
+
+.full-name{
+    position: absolute;
+    width: 365.01px;
+    height: 24px;
+    left: 74px;
+    top: 224px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    border: none;
+
+    color: #958D8D;
+
+}
+
+.l2{
+    position: absolute;
+    width: 362.03px;
+    height: 0px;
+    left: 75px;
+    top: 248px;
+
+    border: 1px solid #A59C9C;
+    transform: rotate(-0deg);
+
+}
+
+.unique-code{
+    position: absolute;
+    width: 365.01px;
+    height: 24px;
+    left: 74px;
+    top: 275px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    border: none;
+
+    color: #937E72;
+}
+
+.l3{
+    position: absolute;
+    width: 362.03px;
+    height: 0px;
+    left: 75px;
+    top: 301px;
+
+    border: 1px solid #937E72;
+    transform: rotate(-0deg);
+}
+
+.l4{
+    position: absolute;
+    width: 368.03px;
+    height: 0px;
+    left: 75px;
+    top: 354px;
+
+    border: 1px solid #958D8D;
+    transform: rotate(-0deg);
+}
+
+.l5{
+    position: absolute;
+    width: 365.01px;
+    height: 0px;
+    left: 75px;
+    top: 404px;
+
+    border: 1px solid #958D8D;
+    transform: rotate(-0deg);
+}
+
+.battion-id{
+    position: absolute;
+    width: 365.01px;
+    height: 24px;
+    left: 74px;
+    top: 330px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    border: none;
+    color: #958D8D;
+
+}
+
+.phone{
+    position: absolute;
+    width: 365.01px;
+    height: 24px;
+    left: 75px;
+    top: 378px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #958D8D;
+
+}
+
+.Create{
+    
+position: absolute;
+width: 363px;
+height: 44px;
+left: 74px;
+top: 63px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+color: #666262;
+/* identical to box height */
+}
+
