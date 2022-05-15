@@ -11,50 +11,50 @@ import {
 } from "recharts";
 
 export default function Areachaart() {
-  const data = [
-    {
-      name: "Mizoram",
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
-    },
-    {
-      name: "Cherrapunji",
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
-    },
-    {
-      name: "Hyderabad",
-      uv: 2000,
-      pv: 9800,
-      amt: 2290,
-    },
-    {
-      name: "tuscom",
-      uv: 2780,
-      pv: 3908,
-      amt: 2000,
-    },
-    {
-      name: "Haryana",
-      uv: 1890,
-      pv: 4800,
-      amt: 2181,
-    },
-    {
-      name: "Delhi",
-      uv: 2390,
-      pv: 3800,
-      amt: 2500,
-    },
-    {
-      name: "Chan",
-      uv: 3490,
-      pv: 4300,
-      amt: 2100,
-    },
-  ];
+    const data = [
+      {
+        name: "West Bengal",
+        uv: 239,
+        pv: 800,
+        amt: 2400,
+      },
+      {
+        name: "Assam ",
+        uv: 136,
+        pv: 70,
+        amt: 2210,
+      },
+      {
+        name: "Gujarat",
+        uv: 87,
+        pv: 550,
+        amt: 2290,
+      },
+      {
+        name: "Karnataka",
+        uv: 74,
+        pv: 500,
+        amt: 2000,
+      },
+      {
+        name: "Madhya Pradesh",
+        uv: 74,
+        pv: 400,
+        amt: 2181,
+      },
+      {
+        name: "Kerala",
+        uv: 50,
+        pv: 300,
+        amt: 2500,
+      },
+      {
+        name: "Maharastra",
+        uv: 44,
+        pv: 200,
+        amt: 2100,
+      },
+    ];
 
   return (
     <div>

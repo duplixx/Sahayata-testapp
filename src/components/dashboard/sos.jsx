@@ -50,50 +50,10 @@ export default function Post() {
       <input type="checkbox" id="my-modal-4" class="modal-toggle" />
       <label for="my-modal-4" class="modal cursor-pointer">
         <div className="w-[400px] h-[400px]  bg-slate-400 flex-col align-center justify-self-center rounded-xl py-4 ">
-          <div className="flex flex-col pt-4 ">
-            <div class="form-control">
-              <label class="input-group">
-                <span class="">Text here</span>
-                <input type="text" class="input input-bordered" />
-              </label>
-            </div>
-            {/* <input type="text"  placeholder='title' className="rounded-xl m-2" /> */}
+          Your notification is in progress <i className="animate-spin">|</i>
           </div>
-          <div className=" h-[100px] bg-white  rounded-xl mt-8 ">
-            <input type="file" placeholder="Insert Image" className="p-2" />
-            <button
-              onClick={UploadImage}
-              className="btn btn-primary mt-5"
-              onChange={(event) => {
-                setImageUpload(event.target.files[0]);
-              }}
-            >
-              Submit
-            </button>
-          </div>
-          {/* <div class="dropdown dropdown-hover  mt-8">
-                <label tabindex="0" class="btn bg-white m-1 text-black" onChange={(event) => {
-                       setImageUpload(event.target.file[0]);
-                  }}>
-                  Select Location
-                </label>
-                <ul
-                  tabindex="0"
-                  class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li>
-                    <a>Item 1</a>
-                  </li>
-                  <li>
-                    <a>Item 2</a>
-                  </li>
-                </ul>
-              </div> */}
-        </div>
-      </label>
-
-      {/* <label htmlFor="my-modal-4" className="modal cursor-pointer">
-      </label> */}
+          
+       </label>
     </div>
   );
 }

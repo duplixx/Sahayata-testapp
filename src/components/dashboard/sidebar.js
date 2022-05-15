@@ -9,8 +9,6 @@ import { CgNotifications } from 'react-icons/cg'
 import Info from '../../context/userinfo'
 import animationData from '../../lottie/wombbb.json'
 import Lottie from 'react-lottie';
-import Postmodal from './postmodal'
-import Postmodalsmall from './postmodalsmall';
 export default function Sidebar() {
     const defaultOptions = {
         loop: true,

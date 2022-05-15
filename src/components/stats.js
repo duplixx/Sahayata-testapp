@@ -5,7 +5,7 @@ import Slide from 'react-reveal/Slide';
 export default function Stats() {
   return (
     <div>
-      <div className="stats stats-vertical shadow ">
+      <div className="stats stats-vertical shadow-lg shadow-black ">
         <div className="stat">
           <div className="stat-title">Total Credits</div>
            <Slide left><div className="stat-value text-primary">3k</div></Slide>

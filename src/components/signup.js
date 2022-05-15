@@ -1,8 +1,6 @@
 import React from 'react'
 import Lottie from 'react-lottie';
 import animationData from '../lottie/turtle.json'
-// import '../loading.css';
-// import CardLogin from './CardLogin';
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import GoogleButton from "react-google-button";
 import { useRef, useEffect, useState } from "react";

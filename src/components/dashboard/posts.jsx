@@ -7,7 +7,8 @@ import { ref, uploadBytes, listAll, getDownloadURL } from "firebase/storage";
 import { v4 } from "uuid";
 
 export default function Post() {
-  const data = {location:"lukhnow"}
+  const data = { location: "lukhnow" };
+
   const [ImageUpload, setImageUpload] = useState(null);
   const [ImageList, setImageList] = useState([]);
   const ImageListRef = ref(storage, "images/");
@@ -15,7 +16,7 @@ export default function Post() {
     if (ImageUpload == null) return;
     const imageRef = ref(storage, "image/${imageUpload.name+v$()}");
     uploadBytes(imageRef, ImageUpload).then(() => {
-      alert("Image Uploaded");
+      alert("Image Uploaded !!");
     });
   };
   useEffect(() => {
@@ -44,45 +45,76 @@ export default function Post() {
           />
         </svg>
       </label>
-      {/* Put this part before </body> tag */}
       <input type="checkbox" id="my-modal-4" class="modal-toggle" />
       <label for="my-modal-4" class="modal cursor-pointer">
-        <div className="w-[400px] h-[400px]  bg-slate-400 flex-col align-center justify-self-center rounded-xl py-4 mx-4 ">
+        <div className="relative w-[400px] h-[400px]  bg-gray-400 flex-col align-center justify-self-center rounded-xl py-4 px-2 ">
           <div className="flex flex-col pt-4 ">
             <div class="form-control">
               <label class="input-group">
                 <span class="">Text here</span>
-                <input
-                  type="text"
-                  class="input input-bordered"
-                />
+                <input type="text" class="input input-bordered items-center" />
               </label>
             </div>
-            {/* <input type="text"  placeholder='title' className="rounded-xl m-2" /> */}
           </div>
-          <div className=" h-[100px] bg-white  rounded-xl mt-8 ">
-            <input type="file" placeholder="Insert Image" className="p-2" />
-            <button onClick={UploadImage} className="btn btn-primary mt-5" onChange={(event) => {
-                  setImageUpload(event.target.files[0])}}>Submit</button>
+          <div className=" bg-white  rounded-xl mt-8 ">
+            <input
+              type="file"
+              placeholder="Insert Image"
+              className="p-2"
+              onChange={(event) => {
+                setImageUpload(event.target.files[0]);
+              }}
+            />
+            <button
+              onClick={UploadImage}
+              className="bg-primary p-4 px-8 absolute right-3 bottom-5 rounded-xl  hover:bg-error hover:text-white "
+            >
+              Submit
+            </button>
           </div>
-          {/* <div class="dropdown dropdown-hover  mt-8">
-                <label tabindex="0" class="btn bg-white m-1 text-black" onChange={(event) => {
-                       setImageUpload(event.target.file[0]);
-                  }}>
-                  Select Location
-                </label>
-                <ul
-                  tabindex="0"
-                  class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li>
-                    <a>Item 1</a>
-                  </li>
-                  <li>
-                    <a>Item 2</a>
-                  </li>
-                </ul>
-              </div> */}
+          <select class="select select-info w-1/2 max-w-xs mt-5">
+            <option disabled selected>
+              Select Location
+            </option>
+            <option>JAMMU AND KASHMIR</option>
+            <option>HIMACHAL PRADESH</option>
+            <option>PUNJAB</option>
+            <option> CHANDIGARH</option>
+            <option>UTTARAKHAND</option>
+            <option>HARYANA</option>
+            <option>DELHI</option>
+            <option>RAJASTHAN</option>
+            <option>UTTAR PRADESH</option>
+            <option>BIHAR</option>
+            <option>SIKKIM</option>
+            <option>ARUNACHAL PRADESH</option>
+            <option>NAGALAND</option>
+            <option>MANIPUR</option>
+            <option>MIZORAM</option>
+            <option>TRIPURA</option>
+            <option>MEGHALAYA</option>
+            <option>ASSAM</option>
+            <option>WEST BENGAL</option>
+            <option>JHARKHAND</option>
+            <option>ORISSA</option>
+            <option>CHHATTISGARH</option>
+            <option>MADHYA PRADESH</option>
+            <option>GUJARAT</option>
+            <option>DAMAN AND DIU</option>
+            <option>DADAR AND NAGAR HAVELI</option>
+            <option>MAHARASTRA</option>
+            <option>KARNATAKA</option>
+            <option>GOA</option>
+            <option>TAMIL NADU</option>
+            <option>LAKSHADWEEP</option>
+            <option>KERALA</option>
+            <option>PUDUCHERRY</option>
+            <option>ANDAMAN AND NICOBAR</option>
+            <option>TELANGANA</option>
+            <option>ANDHRA PRADESH</option>
+            <option>OTHER TERRITORY</option>
+            <option>OTHER COUNTRY</option>
+          </select>
         </div>
       </label>
 
